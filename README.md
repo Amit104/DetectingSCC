@@ -13,24 +13,24 @@ will be created in the current folder.
 
 ### How to compile?
 
-    1. The architecture to which the code should be compiled
-    can be set via GPU_ARCH variable. If nothing provided,
-    Makefile will compile the code for sm_35.
+1. The architecture to which the code should be compiled
+can be set via GPU_ARCH variable. If nothing provided,
+Makefile will compile the code for sm_35.
 
-    2. Path to NVCC compiler can be set via NVCC_PATH.
-    If nothing is provided, NVCC will be picked from
-    default location (i.e. location where CUDA toolkit installs
-    NVCC binary)
+2. Path to NVCC compiler can be set via NVCC_PATH.
+If nothing is provided, NVCC will be picked from
+default location (i.e. location where CUDA toolkit installs
+NVCC binary)
 
-    Final binary will be created in the current folder.
- 
-    Examples:
-        a. make 
-           will compile SCC code for sm_35 architecture by
-           picking binary from default location. 
-        b. make NVCC_PATH=/path/to/nvcc GPU_ARCH=sm_37 
-           will compile SCC code for sm_37 architecture by picking
-           NVCC binary from /path/to/nvcc.
+Final binary will be created in the current folder.
+
+Examples:
+    a. make 
+       will compile SCC code for sm_35 architecture by
+       picking binary from default location. 
+    b. make NVCC_PATH=/path/to/nvcc GPU_ARCH=sm_37 
+       will compile SCC code for sm_37 architecture by picking
+       NVCC binary from /path/to/nvcc.
 
 
 ### How to execute? 
