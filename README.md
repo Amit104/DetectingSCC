@@ -41,9 +41,11 @@ GTgraph format. If not provided the results are undefined.
 Sample input graph file can be found in data/ folder.
 
 
+```
 ./scc -a [g/h/x/y/d] -p [0/1] -q [0/1] -w [1/2/4/8/16/32] -f <file>
 -a algorith to use   g - vHong, h - vSlota, x - wHong, y - wSlota
 -p Trim-1 enable
 -q Trim-2 enable
 -w warp size(used only when warp based)
 -f input file
+```
